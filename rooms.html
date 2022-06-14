@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="icon" href="./images/logo.jpg">
+        <title>Karanambu Lodge - Rooms</title>
+        <link rel="stylesheet" href="./master.css">
+    </head>
+
+    <body>
+        <div class="contactbar">Tel: +592 643-4110  FB: @karanambulodge    Email: karanambulodgegy@gmail.com</div>
+        <div class="topnav">
+            <img src="./images/logo.jpg" alt="logo">
+            <h1>Karanambu Lodge</h1>
+            <a href="./index.html">HOME</a>
+            <a class="active" href="./rooms.html">ROOMS</a>
+            <a href="./itineraries.html">ITINERARIES</a>
+            <a href="./contact.html">CONTACT US</a>
+            <a href="./gallery.html">GALLERY</a>
+        </div>
+
+        <div class="heroimage" style="background: url('./images/rooms/mainlounge.png'); background-size:cover;">
+            <div class="heroimagetext">   
+                <h1 style="font-size: 50px">Experience Comfort In Our Facilities!</h1>
+                <br/>
+                <p style="font-size: 1.5vw">Enjoy our luxourious rooms, Relax in the guest lounge, or Experience the outdoors in one of our locally crafted hammocks.</p>
+                <br>
+                <a href="./bookings.html" class="toursbtn">Book Now</a>
+            </div> 
+        </div>
+
+        <div class="colouredblock">
+            <p style="text-align: center;">Take advantage of our all inclusive packages encompassing best in class accomodations, home-cooked meals created with locally grown ingredients, on-site activities, and local drinks. Other amenities include our laundry service, afternoon tea, and a wonderful gift basket.</p>
+        </div>
+
+        <div class="textandimagecontainer">
+            <div class="textandimagecontainertext">
+                <h1 class="h1custom" style="font-size: 50px; text-align: center;margin-right: 8vw;">Accomodations</h1>
+                <p style="text-align: center; margin-right: 8vw; margin-left: 8vw;">Experience ultimate privacy and relaxation in our thatched guest cabins. Each cabin is outfitted with a fully equipped bathroom, a private lounge area equipped with a comfortable hammock, and is within close proximity to the Rupununi River so you could take a dip at your discretion. Our rooms are available with different bed configurations to ensure comfort with even the largest of parties.</p>
+            </div>
+            <div class="textandimagecontainerimage">
+                <div class="slideshow-container">
+                    <div class="roomslides">
+                        <img src="./images/rooms/multibed.png">
+                    </div>
+                    <div class="roomslides">
+                        <img src="./images/rooms/bigbed.png">
+                    </div>
+                    <div class="roomslides">
+                        <img src="./images/rooms/cabins.png">
+                    </div>
+                    <div class="roomslides">
+                        <img src="./images/rooms/doublebed.png">
+                    </div>
+                    <div class="roomslides">
+                        <img src="./images/rooms/net.png">
+                    </div>
+                    <div class="roomslides">
+                        <img src="./images/rooms/hammock.png">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="textandimagecontainer" style="margin-top:0vw; background-color: #d1d1d1;">
+            <div class="textandimagecontainerimage">
+                <div class="slideshow-container">
+                    <div class="dineslides">
+                        <img src="./images/rooms/maindiningtable.png">
+                    </div>
+                    <div class="dineslides">
+                        <img src="./images/rooms/dining.png">
+                    </div>
+                    <div class="dineslides">
+                        <img src="./images/rooms/dining2.png">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+            </div>
+            <div class="textandimagecontainertext">
+                <h1 class="h1custom" style="font-size: 50px; text-align: center;margin-right: 8vw;">Dining</h1>
+                <p style="text-align: center; margin-right: 8vw; margin-left: 8vw;">Eat well with our home-cooked meals prepared with locally grown ingredients. Enjoy meat from our own stock, and vegetables from our own garden. Guests are welcome to eat and share stories together in the main dining hall or enjoy an intimate and private experience in the lounge of one's own cabin. </p>
+            </div>
+        </div>
+
+        <div class="colouredblock" style="margin-top: 3vw">
+            <p style="text-align: center;">We provide a pet safe experience with a complimentary breakfast and parking. Babysitting services are also avaiable should you require them. Feel free to make use of our complimentary internet access and business center, but we feel that you may not even want to!</p>
+            <a href="./bookings.html" class="toursbtn">Book Now</a>
+        </div>
+
+        <div class="footer" style="float: left; text-align: center;">
+            <h2>Additional Info</h2>
+            <br>
+            <a href="dummy.html" style="padding-right: 20px;">Copyright Information</a>
+            <a href="dummy.html"style="padding-right: 20px;">Terms Of Service</a>
+            <a href="dummy.html"style="padding-right: 20px;">Privacy Policy</a>
+            <a href="dummy.html"style="padding-right: 20px;">DMCA</a>
+            <a href="dummy.html"style="padding-right: 20px;">Blog</a>
+            <a href="dummy.html"style="padding-right: 20px;">FAQ</a>
+        </div>
+
+        <script>
+            //(W3 Schools, 2019)
+            let slideIndex = [1,1];
+            let slideId = ["roomslides", "dineslides"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+
+            function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+            }
+
+            function showSlides(n, no) {
+                let i;
+                let x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}    
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex[no]-1].style.display = "block";  
+            }
+        </script>
+
+    </body>
+</html>
